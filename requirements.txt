@@ -1,3 +1,5 @@
-Django==1.7.7
-gunicorn==19.3.0
-requests-oauthlib==0.4.2
+Django>=1.8
+gunicorn>=19
+requests-oauthlib>=0.4
+-e git+https://github.com/kcsry/django-form-designer.git@cf72bf76329059b53f9c7750f016fd0b03cc324f#egg=django-form-designer==0.8.5
+django-picklefield>=0.3
