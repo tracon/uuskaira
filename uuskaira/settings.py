@@ -34,3 +34,5 @@ KOMPASSI_OAUTH2_CLIENT_SECRET = 'kompassi_insecure_test_client_secret'
 KOMPASSI_OAUTH2_SCOPE = ['read']
 KOMPASSI_API_V2_USER_INFO_URL = 'http://kompassi.dev:8000/api/v2/people/me'
 
+KOMPASSI_ADMIN_GROUP = 'kaira-admins'
+KOMPASSI_STAFF_GROUP = 'kaira-staff'
