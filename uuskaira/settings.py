@@ -27,12 +27,14 @@ if DEBUG:
 
 ALLOWED_HOSTS = ['.tracon.fi']
 
-KOMPASSI_OAUTH2_AUTHORIZATION_URL = 'http://kompassi.dev:8000/oauth2/authorize'
-KOMPASSI_OAUTH2_TOKEN_URL = 'http://kompassi.dev:8000/oauth2/token'
-KOMPASSI_OAUTH2_CLIENT_ID = 'kompassi_insecure_test_client_id'
-KOMPASSI_OAUTH2_CLIENT_SECRET = 'kompassi_insecure_test_client_secret'
+KOMPASSI_HOST = 'https://kompassi.eu'
+KOMPASSI_OAUTH2_AUTHORIZATION_URL = '{KOMPASSI_HOST}/oauth2/authorize'.format(**locals())
+KOMPASSI_OAUTH2_TOKEN_URL = '{KOMPASSI_HOST}/oauth2/token'.format(**locals())
+KOMPASSI_OAUTH2_CLIENT_ID = 'kompassi_insecure_client_id'
+KOMPASSI_OAUTH2_CLIENT_SECRET = 'kompassi_insecure_client_secret'
 KOMPASSI_OAUTH2_SCOPE = ['read']
-KOMPASSI_API_V2_USER_INFO_URL = 'http://kompassi.dev:8000/api/v2/people/me'
 
 KOMPASSI_ADMIN_GROUP = 'kaira-admins'
 KOMPASSI_STAFF_GROUP = 'kaira-staff'
+
+LOGOUT_REDIRECT_URL = '{KOMPASSI_HOST}/logout'.format(**locals())

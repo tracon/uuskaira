@@ -1,0 +1,8 @@
+extends base.jade
+block content
+  h1 Traconin lomakepalvelu
+  p Tämä sivusto ei sisällä käyttäjän vaihdettavia osia.
+  if user.is_anonymous
+    p: a(href='{% url "oauth2_login_view" %}') Kirjaudu sisään
+  else
+    p Olet kirjautunut sisään nimellä <strong>{{ user.username }}</strong>. <a href='{% url "logout_view" %}'>Kirjaudu ulos</a>
