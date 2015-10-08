@@ -1,6 +1,8 @@
-# Example for Kompassi OAuth2 SSO
+# Generic form generator
 
-This is an example of OAuth2 authentication against the [Kompassi](/tracon/kompassi) event management system. The `kompassi_oauth2` directory contains reusable code for your Django application.
+The aim of this project is to allow Tracon concom members to design forms and have visitors and volunteer workers fill them out. We use [django-form-designer](https://github.com/kcsry/django-form-designer) and authenticate using OAuth2 against [Kompassi](https://github.com/tracon/kompassi).
+
+The rest of this README needs update.
 
 ## Getting started
 
